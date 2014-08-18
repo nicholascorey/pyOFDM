@@ -1,0 +1,4 @@
+This project is an attempt to get OFDM working reliably over a sound card or
+some other channel as a springboard for other communication experiments.
+
+Current focus is on simplicity, not performance.  Hack away!
