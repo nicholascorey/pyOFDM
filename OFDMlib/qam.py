@@ -16,7 +16,7 @@ class Qam64:
 		return 6
 		
 	def waveOut(self, bits):
-		a = _amplitude(bits)
+		a = self._amplitude(bits)
 		return 	a[0] * scipy.sin(2 * pi * self.freq * scipy.linspace(0, self.duration, self.duration*self.sampleRate)) + \
 				a[1] * scipy.cos(2 * pi * self.freq * scipy.linspace(0, self.duration, self.duration*self.sampleRate))
 
